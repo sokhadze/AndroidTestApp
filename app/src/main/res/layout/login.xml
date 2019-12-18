@@ -5,14 +5,16 @@
     android:id="@+id/constraintLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_color">
+    android:background="@android:color/background_dark">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="32dp">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -63,53 +65,45 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.862" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <View
                 android:id="@+id/divider2"
                 android:layout_width="411dp"
-                android:layout_height="67dp"
-                android:layout_marginTop="381dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="372dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="60dp"
+                android:id="@+id/nextBtn"
+                android:layout_width="190dp"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_button"
                 android:text="@string/next_arrow"
                 app:layout_constraintBottom_toBottomOf="@+id/divider2"
                 app:layout_constraintEnd_toEndOf="@+id/divider2"
-                app:layout_constraintHorizontal_bias="0.786"
+                app:layout_constraintHorizontal_bias="0.66"
                 app:layout_constraintStart_toStartOf="@+id/divider2"
                 app:layout_constraintTop_toTopOf="@+id/divider2"
                 app:layout_constraintVertical_bias="0.0" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="99dp"
-                android:layout_height="104dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/logoo" />
-
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Sign in"
+                android:layout_width="91dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="8dp"
+                android:text="sign in"
                 android:textColor="@android:color/white"
                 android:textSize="30dp"
                 app:layout_constraintBottom_toTopOf="@+id/divider"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </android.support.constraint.ConstraintLayout>
 
